@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe Payment System</title>
+    <style>
+        #processing, #success, #failure {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #success {
+            color: green;
+        }
+
+        #failure {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>PhonePe Payment System</h1>
+    <button id="paymentButton">Initiate Payment</button>
+    
+    <div id="processing">
+        <p>Processing your payment...</p>
+    </div>
+
+    <div id="success">
+        <p>Payment successful! Thank you for using PhonePe.</p>
+    </div>
+
+    <div id="failure">
+        <p>Payment failed. Please try again later.</p>
+    </div>
+
+</body>
+<script src="phonpay.js"></script>
+</html>
